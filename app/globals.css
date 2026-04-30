@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Pretendard Variable";
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/woff2/PretendardVariable.woff2")
+    format("woff2-variations");
+}
+
+@theme {
+  --color-primary: #5c7c5a;
+  --color-primary-hover: #4a6648;
+  --color-primary-soft: #e7efe5;
+  --color-accent: #a8c66c;
+  --color-accent-soft: #eef4dd;
+  --color-bg: #fafaf7;
+  --color-surface: #ffffff;
+  --color-ink: #1f2a1e;
+  --color-ink-soft: #5c6b5a;
+  --color-line: #e5e7e0;
+
+  --font-sans:
+    "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", sans-serif;
+
+  --radius-card: 1.25rem;
+  --shadow-soft: 0 10px 40px -10px rgba(31, 42, 30, 0.12);
+}
+
+html,
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-ink);
+}
+
+.brand-wordmark {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
